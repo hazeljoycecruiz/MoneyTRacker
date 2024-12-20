@@ -1,0 +1,43 @@
+.validation-error-color {
+    color: #c00000;
+    font-size: 13px;
+}
+
+.captcha iframe {
+    border: .5px solid red;
+    box-shadow: 0 0 5px 0 red;
+}
+
+.form-container {
+    height: 380px;
+}
+
+.btn-signin {
+    border: 1px solid #90C271;
+}
+
+.consign {
+    padding-top: 50px;
+    height: 100px;
+    width: 300px;
+}
+
+
+.col1 {
+    height: 100vh;
+    justify-content: center;
+
+}
+
+.col2 {
+    height: 100vh;
+
+    background: #FEE19D;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.imgcon {
+    height: 500px;
+}

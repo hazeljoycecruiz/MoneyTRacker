@@ -1,0 +1,119 @@
+
+.main-container {
+    font-family: 'inter';
+}
+
+.rowAl {
+    border-bottom: 1px solid #DCD4D4;
+}
+
+.inpamount {
+    background: url("https://img.icons8.com/material-outlined/24/peso-symbol.png") no-repeat left;
+    background-size: 20px;
+    background-color: white;
+}
+
+
+:-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #8CEF84;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.scrollbar {
+    border-top: 1px solid #DCD4D4;
+    border-bottom: 1px solid #DCD4D4;
+    height: 180px;
+
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+    max-height: 220px;
+    overflow-y: scroll;
+}
+
+.scrollbar:hover {
+    &::-webkit-scrollbar-thumb {
+        background-color: #D6EEC6;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #8CEF84;
+
+    }
+
+}
+
+.grey {
+    color: #757575;
+}
+
+.income-align {
+    height: 350px;
+}
+
+.income-history {
+    background: #F8FFF3;
+    border: 1px solid #757575;
+    width: 800px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.container-income {
+    background: #F8FFF3;
+    border: 1px solid #757575;
+    width: 390px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.drowShadow {
+    box-shadow: 0 2px 1px rgba(117, 117, 117, 0.5);
+}
+
+.walletSize {
+    font-size: 35px;
+    color: #757575;
+}
+
+.daily-container {
+    width: 280px;
+    height: 120px;
+    border: 1px solid #757575;
+    border-radius: 10px;
+}
+
+/* .topcontainer {
+    height: 280px;
+} */
+
+.botcontainer {
+    height: 350px;
+}
+
+.main-container {
+    font-family: 'inter';
+}
+
+@media (max-width: 768px) {
+    .daily-container {
+        width: 100%; /* Adjust as needed */
+    }
+
+}

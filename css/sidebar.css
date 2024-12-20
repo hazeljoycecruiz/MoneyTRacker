@@ -1,0 +1,47 @@
+
+#side_nav {
+    height: 100vh;
+    font-weight: bolder;
+    background-color: #fff2d3;
+    border-right: 1px solid #DCD4D4;
+    min-width: 230px;
+    max-width: 230px;
+    transition: all 0.3s;
+}
+
+.sidebar li:hover {
+    background: linear-gradient(to right, rgb(140, 239, 132), rgb(207, 236, 205), #fff2d3);
+    border: 1px solid #FEE19D;
+}
+
+.navBar{
+    background: #fff2d3;
+    position: fixed;
+    top: 0;
+}
+
+.sidebar li.active {
+    background: linear-gradient(to right, rgb(140, 239, 132), rgb(207, 236, 205), #fff2d3);
+border: 1px solid #FEE19D;
+}
+
+.sidebar li a {
+    color: #000;
+}
+
+.sidebar li a:hover {
+    text-decoration: none;
+}
+
+@media(max-width: 767px) {
+    #side_nav {
+        margin-left: -250px;
+        position: absolute;
+        min-height: 100vh;
+        z-index: 1;
+    }
+
+    #side_nav.active {
+        margin-left: 0;
+    }
+}

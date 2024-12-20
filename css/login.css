@@ -1,0 +1,18 @@
+/* CSS */
+.validation-error-color {
+    color: #c00000;
+    font-size: 12px;
+}
+
+.form-container {
+    height: 180px;
+}
+
+.btn-signin {
+    border: 1px solid #90C271;
+}
+
+.consign {
+    padding-top: 100px;
+    width: 300px;
+}

@@ -1,0 +1,82 @@
+.total-expenses-label {
+    font-size: 0.9rem; /* Adjust size as needed */
+    font-weight: bold; /* Optional: Makes the text bold */
+    color: #b41515; /* Optional: Changes text color */
+}
+
+.main-container{
+    font-family: 'inter';
+}
+
+.iconColor {
+    color: #F9CAAE;
+}
+
+.rec {
+    background: #F1F1F1;
+    width: 250px;
+    height: 130px;
+    border: 1px solid #757575;
+    border-radius: 10px;
+}
+
+.bot-container {
+    height: 320px;
+}
+
+.drowShadow {
+    box-shadow: 0 2px 1px rgba(117, 117, 117, 0.5);
+}
+
+.imagecon {
+    height: 350px;
+    width: 530px;
+    border-radius: 10px;
+    border: 1px solid #757575;
+    overflow: hidden;
+
+}   
+
+.imagecon img {
+    width: 450px;
+    height: 415px;
+    margin: -35px -50px -50px -0px;
+}
+
+.dotPurple {
+    color: #e93eff;
+    font-size: 13px;
+}
+
+.dotOrange {
+    color: #FEE19D;
+    font-size: 13px;
+}
+
+.textSize {
+    font-size: 13px;
+}
+
+.dotGreen {
+    color: #70D380;
+    font-size: 13px;
+}
+
+.barCon {
+    height: 350px;
+    width: 520px;
+    background: #F1F1F1;
+    border-radius: 10px;
+    border: 1px solid #B0B0B0;
+}
+
+.chartCon {
+    background: #FFFFFF;
+    border-radius: 10px;
+    height: 220px;
+    width: 480px;
+}
+
+.topcontainer {
+    height: 350px;
+}

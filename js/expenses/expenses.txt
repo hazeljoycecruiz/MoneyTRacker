@@ -1,0 +1,35 @@
+document.addEventListener("DOMContentLoaded", function () {
+ 
+  // Sidebar Toggle Functionality
+  const openButton = document.querySelector('.open-btn');
+  const closeButton = document.querySelector('.btn-close');
+  const sidebar = document.getElementById('side_nav');
+
+  // Open the sidebar
+  openButton.addEventListener('click', function () {
+      sidebar.style.transform = 'translateX(0)';
+  });
+
+  // Close the sidebar
+  closeButton.addEventListener('click', function () {
+      sidebar.style.transform = 'translateX(-100%)';
+  });
+
+
+  // Add button functionality to insert data into the database
+  document.getElementById('add').addEventListener('click', function() {
+      // Get form values
+      var category = document.getElementById('category').value;
+      var type = document.getElementById('type').value;
+      var amount = document.getElementById('amount').value;
+      var date = document.getElementById('date').value;
+
+      // Validate inputs (Optional)
+      if (category === "" || type === "" || amount === "" || date === "") {
+          alert("Please fill all fields.");
+          return;
+      }
+
+      
+  });
+});

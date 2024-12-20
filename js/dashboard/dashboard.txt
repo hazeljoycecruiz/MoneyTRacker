@@ -1,0 +1,54 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Fetch today's income, spending, and savings data from PHP
+  fetchDashboardData();
+
+  // Sidebar Toggle Functionality
+  const openButton = document.querySelector('.open-btn');
+  const closeButton = document.querySelector('.btn-close');
+  const sidebar = document.getElementById('side_nav');
+
+  // Open the sidebar
+  openButton.addEventListener('click', function () {
+      sidebar.style.transform = 'translateX(0)';
+  });
+
+  // Close the sidebar
+  closeButton.addEventListener('click', function () {
+      sidebar.style.transform = 'translateX(-100%)';
+  });
+
+  // Function to fetch today's data (Income, Spending, Savings)
+  function fetchDashboardData() {
+      fetch('dashboard_data.php') // PHP file to return the data
+          .then(response => response.json())
+          .then(data => {
+              // Display income, spending, savings
+              document.querySelector('.dailyincomecontainer').innerHTML = formatCurrency(data.today_income);
+              document.querySelector('.dailyspendingcontainer').innerHTML = formatCurrency(data.today_spending);
+              document.querySelector('.dailysavingscontainer').innerHTML = formatCurrency(data.today_savings);
+          })
+          .catch(error => console.error('Error fetching dashboard data:', error));
+  }
+
+  // Format the values as currency
+  function formatCurrency(value) {
+      if (value === null) return "$0.00";  // If value is null or undefined, show $0.00
+      return `$${parseFloat(value).toFixed(2)}`;
+  }
+
+  // Add button functionality to insert data into the database
+  document.getElementById('add').addEventListener('click', function() {
+      // Get form values
+      var type = document.getElementById('type').value;
+      var amount = document.getElementById('amount').value;
+      var date = document.getElementById('date').value;
+
+      // Validate inputs (Optional)
+      if (type === "" || amount === "" || date === "") {
+          alert("Please fill all fields.");
+          return;
+      }
+
+   
+  });
+});

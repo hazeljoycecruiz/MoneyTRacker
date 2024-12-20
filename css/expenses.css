@@ -1,0 +1,174 @@
+
+    .rowSize {
+        height: 55px;
+    }
+
+    .HrTopBox {
+        background: #757575;
+        border: 1px solid rgb(49, 49, 49);
+        height: 2px;
+    }
+
+    .spanSize {
+        font-size: 25;
+    }
+
+    .main-container {
+        font-family: 'inter';
+    }
+
+    .colheight {
+        height: 175px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #8CEF84;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .inpamount {
+        background: url("https://img.icons8.com/material-outlined/24/peso-symbol.png") no-repeat left;
+        background-size: 20px;
+        background-color: white;
+    }
+
+    
+    .textdate {
+        background-color: #ffffff;
+        cursor: pointer;
+        height: 38px;
+    }
+
+    .add {
+        background: #8CEF84;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .dropdown {
+        padding-left: 20px;
+        justify-content: center;
+
+    }
+
+    :-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+
+    .scrollbar {
+        height: 350px;
+
+        &::-webkit-scrollbar {
+            background-color: transparent;
+            width: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: transparent;
+        }
+
+        max-height: 390px;
+        overflow-y: scroll;
+    }
+
+    .scrollbar:hover {
+        &::-webkit-scrollbar-thumb {
+            background-color: #D6EEC6;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: #8CEF84;
+
+        }
+
+    }
+
+
+    .grey {
+        color: #757575;
+    }
+
+    .invis {
+        color: #F8FFF3;
+        background: #F8FFF3;
+    }
+
+
+
+    .rowbotborder {
+        border-top: 1px solid grey;
+    }
+
+    .box2 .row {
+        border-bottom: 1px solid grey;
+    }
+
+    .boxbelow {
+        width: 1100px;
+        height: 500px;
+        background: #F8FFF3;
+        border: 1px solid #757575;
+        box-shadow: 0 2px 1px rgba(117, 117, 117, 0.3);
+        border-radius: 10px;
+    }
+
+    .grey {
+        color: #757575;
+    }
+
+
+
+    .text-budget {
+        font-size: 40;
+        font-weight: bold;
+    }
+
+    .text-budget-plan {
+        font-size: 25;
+        font-weight: bold;
+    }
+
+    .outside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .box {
+        width: 1100px;
+        background: #F8FFF3;
+        border: 1px solid #757575;
+        box-shadow: 0 2px 1px rgba(117, 117, 117, 0.3);
+        border-radius: 10px;
+    }
+
+    .align {
+        width: 900px;
+        margin: auto;
+
+    }
+
+    .labelColor {
+        color: #757575;
+    }
+
+
+
+    .input-group-text i.fas.fa-calendar:hover {
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+
+        .box,
+        .align {
+            max-width: 90%;
+        }
+    }
